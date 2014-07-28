@@ -18,6 +18,8 @@ regdict = {
     'CRA2l': 'cr_z'
     }
 
+_rel_key = 'relative_systematics'
+
 def run():
     systdict = {}
     loc = dict(globals())
@@ -31,7 +33,7 @@ def run():
             else:
                 systdict[syst.name, danreg, dansamp] = list(syst.range)
 
-    print(yaml.dump(_nest(systdict)))
+    print(yaml.dump({_rel_key: _nest(systdict)}))
 
 def _set_value(nest_dict, key_list, value):
     if len(key_list) == 1:
