@@ -1,5 +1,5 @@
 #!/usr/bin/env python2.7
-"""dump sbottom colors"""
+"""dump scharm colors"""
 import ROOT
 from ROOT import TColor, TString
 import warnings
@@ -20,8 +20,14 @@ for num, sig in enumerate(signal_list):
 
 prt_fmt = '| {:10} | {:11} | {:5.3f} | {:5.3f} | {:5.3f} | {rn:11} |'
 leg_fmt = prt_fmt.replace(':5.3f',':5').replace(':',':^')
+
+colorbox = (' <span style="background-color: {color}; padding-left: 5cm">'
+            '</span> ')
+prt_fmt += colorbox + '|'
+leg_fmt += '*Color*'.center(len(colorbox)) + '|'
+
 legs = ['*process*', '*html name*'] + ['*{}*'.format(x) for x in 'rgb']
-print leg_fmt.format(*legs, rn='*root name*')
+print leg_fmt.format(*legs, rn='*root name*', color='#000000')
 for proc, (color, cname) in color_dict.items():
     # data = TString(color).Data()
     rgb_str = [color[x*2+1:x*2+3] for x in range(3)]
@@ -34,6 +40,5 @@ for proc, (color, cname) in color_dict.items():
         wrn = "root and html {} not the same, delta = {}".format(cname, delta)
         warnings.warn(wrn)
     out_str = prt_fmt.format(
-        proc, cname, *rgb
-        , rn=back.GetName())
+        proc, cname, *rgb, rn=back.GetName(), color=color)
     print out_str
