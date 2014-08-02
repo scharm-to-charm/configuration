@@ -8,7 +8,10 @@ color_dict = {
     'other':('#FFA500','orange'),
     'Wjets':('#FFFF00','yellow'),
     'Zjets':('#008000','green' ),
-    'top':('#0000FF',  'blue'  ),
+    # 'Zjets_sbottom':('#008000','green' ),
+    # 'top':('#0000FF',  'blue'  ),
+    # 'top_sbottom':('#3333CC', '#3333CC')
+    'top':('#6666FF','#6666FF' ),
     }
 signal_list = [
     ('#800080', 'purple'),
@@ -21,10 +24,15 @@ for num, sig in enumerate(signal_list):
 prt_fmt = '| {:10} | {:11} | {:5.3f} | {:5.3f} | {:5.3f} | {rn:11} |'
 leg_fmt = prt_fmt.replace(':5.3f',':5').replace(':',':^')
 
-colorbox = (' <span style="background-color: {color}; padding-left: 5cm">'
+# colorbox = (' <span style="background-color: {color}; padding-left: 5cm">'
+#             '</span> ')
+colorbox = (' <span style="background-color: {color};">can you read this?'
             '</span> ')
 prt_fmt += colorbox + '|'
 leg_fmt += '*Color*'.center(len(colorbox)) + '|'
+
+# sbot_w = ROOT.gROOT.GetColor(ROOT.kBlue - 3)
+# print sbot_w.GetRed(), sbot_w.GetGreen(), sbot_w.GetBlue()
 
 legs = ['*process*', '*html name*'] + ['*{}*'.format(x) for x in 'rgb']
 print leg_fmt.format(*legs, rn='*root name*', color='#000000')
