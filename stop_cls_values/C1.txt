@@ -1,0 +1,16 @@
+m_scharm = 100.000000 GeV, m_LSP = 1.000000 GeV, CLs_exp = 0.000001, CLs_obs = 0.000001
+m_scharm = 150.000000 GeV, m_LSP = 50.000000 GeV, CLs_exp = 0.000001, CLs_obs = 0.000001
+m_scharm = 200.000000 GeV, m_LSP = 1.000000 GeV, CLs_exp = 0.000001, CLs_obs = 0.000001
+m_scharm = 200.000000 GeV, m_LSP = 75.000000 GeV, CLs_exp = 0.000002, CLs_obs = 0.000001
+m_scharm = 250.000000 GeV, m_LSP = 150.000000 GeV, CLs_exp = 0.000722, CLs_obs = 0.000560
+m_scharm = 250.000000 GeV, m_LSP = 50.000000 GeV, CLs_exp = 0.000013, CLs_obs = 0.000009
+m_scharm = 300.000000 GeV, m_LSP = 100.000000 GeV, CLs_exp = 0.001036, CLs_obs = 0.000805
+m_scharm = 300.000000 GeV, m_LSP = 1.000000 GeV, CLs_exp = 0.000422, CLs_obs = 0.000324
+m_scharm = 300.000000 GeV, m_LSP = 200.000000 GeV, CLs_exp = 0.014216, CLs_obs = 0.011666
+m_scharm = 350.000000 GeV, m_LSP = 150.000000 GeV, CLs_exp = 0.029234, CLs_obs = 0.024453
+m_scharm = 350.000000 GeV, m_LSP = 250.000000 GeV, CLs_exp = 0.708817, CLs_obs = 0.688418
+m_scharm = 350.000000 GeV, m_LSP = 50.000000 GeV, CLs_exp = 0.003253, CLs_obs = 0.002578
+m_scharm = 400.000000 GeV, m_LSP = 100.000000 GeV, CLs_exp = 0.046059, CLs_obs = 0.039133
+m_scharm = 400.000000 GeV, m_LSP = 1.000000 GeV, CLs_exp = 0.027953, CLs_obs = 0.023380
+m_scharm = 400.000000 GeV, m_LSP = 200.000000 GeV, CLs_exp = 0.168266, CLs_obs = 0.150224
+m_scharm = 400.000000 GeV, m_LSP = 300.000000 GeV, CLs_exp = 0.372008, CLs_obs = 0.345816
