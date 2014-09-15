@@ -1,6 +1,6 @@
 relative_systematics:
   WTheory:
-    cr_w_mct150_l1pt50:
+    cr_w:
       Wjets: [1.0, 1.0]
     signal_mct150:
       Wjets: [0.83, 1.093]
@@ -20,7 +20,7 @@ relative_systematics:
   topTheory:
     cr_t:
       top: [1.0, 1.0]
-    cr_w_mct150_l1pt50:
+    cr_w:
       top: [1.021, 0.979]
     cr_z:
       top: [1.057, 0.943]

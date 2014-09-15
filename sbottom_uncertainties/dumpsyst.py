@@ -14,7 +14,7 @@ regdict = {
     'SRA200': 'signal_mct200',
     'SRA250': 'signal_mct250',
     'CRAemu': 'cr_t',
-    'CRA1l': 'cr_w_mct150_l1pt50',
+    'CRA1l': 'cr_w',
     'CRA2l': 'cr_z'
     }
 
