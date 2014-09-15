@@ -1,3 +1,4 @@
+C1:
 m_scharm = 100.000000 GeV, m_LSP = 1.000000 GeV, CLs_exp = 0.000001, CLs_obs = 0.000001
 m_scharm = 150.000000 GeV, m_LSP = 50.000000 GeV, CLs_exp = 0.000001, CLs_obs = 0.000001
 m_scharm = 200.000000 GeV, m_LSP = 1.000000 GeV, CLs_exp = 0.000001, CLs_obs = 0.000001
