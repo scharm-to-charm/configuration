@@ -37,6 +37,10 @@ done
 WS_TAIL=SPlusB_combined_NormalMeasurement_model.root
 WORKSPACES=$(echo results/UpperLimitScharm{150,200,250}/$WS_TAIL)
 UpperLimitTable.py $WORKSPACES > /dev/null
-UpperLimitTable.py $WORKSPACES -n 1000
 UpperLimitTable.py $WORKSPACES -n 1500
 UpperLimitTable.py $WORKSPACES -n 3000
+UpperLimitTable.py $WORKSPACES -n 5000
+
+for tab in UpperLimitTable_*.tex ; do
+    sed -r 's/UpperLimitScharm([0-9]*)/$\\mct\\,\1$/' -i $tab
+done
